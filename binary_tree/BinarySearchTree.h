@@ -141,6 +141,7 @@ void BinarySearchTree<T>::remove(const T& x) {
 template <class T>
 void BinarySearchTree<T>::inorderPrint() {
     inorderPrint(root);
+    cout << endl;
 }
 
 template <class T>
@@ -157,6 +158,7 @@ void BinarySearchTree<T>::inorderPrint(BinaryNode<T>* root) {
 template <class T>
 void BinarySearchTree<T>::preorderPrint() {
     preorderPrint(root);
+    cout << endl;
 }
 
 template <class T>
@@ -175,6 +177,7 @@ void BinarySearchTree<T>::preorderPrint(BinaryNode<T>* root) {
 template <class T>
 void BinarySearchTree<T>::postorderPrint() {
     postorderPrint(root);
+    cout << endl;
 }
 
 template <class T>

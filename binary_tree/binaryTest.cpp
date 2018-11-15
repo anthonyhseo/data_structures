@@ -25,22 +25,23 @@ int main() {
     a.insert(z);
 
     a.inorderPrint();
-    cout << endl;
 
     a.preorderPrint();
-    cout << endl;
 
     a.postorderPrint();
-    cout << endl;
 
     cout << a.isEmpty() << endl;
     cout << a.findMin() << endl;
     cout << a.findMax() << endl;
 
-    z = -112;
-    a.remove(z);
+    try {
+        z = -112;
+        a.remove(z);
+    } catch (const char* e) {
+        cerr << e << endl;
+    }
+
     a.inorderPrint();
-    cout << endl;
 
     return 0;
 }
